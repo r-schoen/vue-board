@@ -1,0 +1,44 @@
+$hbar: rgba(0,0,0,0.1);
+$color5: #1D0800;
+$color4: #421300;
+$color3: #802400;
+$color2: #BF3600;
+$color1: #FF4800;
+
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro|Source+Serif+Pro&display=swap');
+
+.home {
+	.posts {
+		list-style: none;
+		text-align:left;
+	}
+	.post-item + .post-item {
+		border-top: 1px solid $hbar;
+	}
+}
+#app {
+  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: $color5;
+  h1,h2,h3,h4,h5 {
+  	font-family: 'Source Serif Pro','Times New Roman',serif;
+  }
+}
+.post {
+	
+}
+
+#nav {
+  padding: 30px;
+
+  a {
+    font-weight: bold;
+    color: $color3;
+
+    &.router-link-exact-active {
+      color: $color3;
+    }
+  }
+}
