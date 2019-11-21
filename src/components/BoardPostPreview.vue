@@ -1,8 +1,7 @@
 <template>
 	<div class='board-post'>
-		<a :href="getPostLink(postId)" v-html="postId"></a>
-		<p v-html="authorId"></p>
-		<p v-html="body"></p>
+		<a :href="getPostLink(postId)" v-html="body"></a><br />
+		- <span v-html="authorName"></span>
 	</div>
 </template>
 
@@ -14,6 +13,7 @@ export default {
 	props: {
 		postId: Number,
 		authorId: Number,
+		authorName: String,
 		body: String,
 		replies: Array
 	},

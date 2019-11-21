@@ -5,6 +5,7 @@ import EmployeeSearch from '../components/EmployeeSearch.vue'
 import Board from '../components/Board.vue'
 import BoardPost from '../components/BoardPost.vue'
 
+
 Vue.use(VueRouter)
 
 const routes = [
