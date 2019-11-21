@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import posts from '@/assets/posts.json'
+import { generatePosts } from '@/store/generateDummyPosts.js'
 
 Vue.use(Vuex)
 
@@ -56,7 +56,7 @@ export const actions = {
 export default new Vuex.Store({
 	state: {
 		lastId:5,
-		posts:posts,
+		posts: generatePosts(5,2),
 	},
 	getters: getters,
 	mutations: mutations,
