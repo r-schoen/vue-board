@@ -15,36 +15,6 @@ const mock = new MockAdapter(Axios)
 const localVue = createLocalVue()
 localVue.use(Vuex)
 
-/*describe("Home page", () => {
-	let actions
-	let store 
-
-	before(() => {
-		actions = {
-			fetchPosts: function() {}
-		},
-		store = new Vuex.Store({
-			state: {},
-			actions
-		})
-	})
-	const test_posts = [
-		{title: "title 1", body: "post 1"},{title: "title 2", body: "post 2"}
-	]
-	mock.onGet(FULL_URL).reply(200, test_posts)
-	it("Contains a list", () => {
-		const wrapper = shallowMount(Home, {store, localVue})
-		assert(wrapper.find("ul"))
-	})
-	it(`Contains every single post (${test_posts.length} for the test)`, async () => {
-	//const wrapper = shallowMount(Home, {store, localVue})
-		const wrapper = shallowMount(Home, {store, localVue})
-		await flushPromises()
-		expect(wrapper.vm.payload).to.be.an("array")
-		assert(wrapper.vm.payload.length == test_posts.length, `is of length ${test_posts.length}`)
-		expect(wrapper.find(".posts li").html()).contain("title 1")
-	})
-})*/
 
 describe("Employee returns correct information", () => {
 	const url = 'http://dummy.restapiexample.com/api/v1/employee/1'

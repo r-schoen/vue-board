@@ -1,0 +1,31 @@
+[
+	{
+		"postId":1,
+		"authorId":2,
+		"authorName":"Karen",
+		"body":"So if you're from africa, why are you white?",
+		"replies": [
+			{
+				"postId": 3,
+				"authorId":4,
+				"authorName": "Gretchen",
+				"body": "<b>oh my god</b> karen you can't just ask someone why they're white"
+			}
+		]
+	},
+	{
+		"postId":4,
+		"authorId":4,
+		"authorName":"Russell Schoen",
+		"body":"Obligatary uncreative post",
+		"replies": [
+			{
+				"postId": 5,
+				"authorId":4,
+				"authorName": "Russell Schoen",
+				"body": "<i>Obligatary uncreative reply, but with italics</i>"
+			}
+		]
+	}
+
+]

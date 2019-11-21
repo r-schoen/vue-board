@@ -19,16 +19,19 @@ export default {
 	methods: {
 		onSubmit: function() {
 			const id = this.$store.getters.currentId
-			console.log("Posting thread")
-			const dt={
-				authorName: this.authorName,
-				body: this.messageBody,
-				authorId: 5,
-				postId: id
-			}
-			console.log(dt)
 			var parentId = Number(this.$route.params.postId)
-			this.$store.dispatch('addReply',parentId, dt)
+			const payload= {
+				parentId: parentId,
+				post: {
+					authorName: this.authorName,
+					body: this.messageBody,
+					authorId: 5,
+					postId: id
+				}
+			}
+			console.log("Data being sent: ")
+			console.log(payload)
+			this.$store.dispatch('addReply',payload)
 		}
 	}
 }
